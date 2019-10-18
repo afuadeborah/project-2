@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/813177f008.js" crossorigin="anonymous"></script>
+    <title>Game Night</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="game">
+                <h1>Raptors Game Night</h1>
+                <h2>What's tonight looking like?</h2>
+                <p>Let's find out.</p>
+            </div>
+        </div>
+    </header> 
+
+    <main>
+        <section class="chooseGame">
+        <div class="wrapper">
+            <h3>Okay, pick your game below.</h3>
+            <form action="#" method="#" class="gameForm" name="gameForm">
+                <label class="gameDrop" for="torontoGame">Which home game are mans tryna reach?</label>
+                <select name="raptorsGames">
+                    <option value="pick1" class="game">Pick a game</option>        
+                </select>
+                <input type="submit" value="Go" id="submitGame">
+                <!-- I don't want both submits to fire an event here! -->
+            </form>
+            <div class="gamePic">
+            
+                <!-- When we choose a game HTML will be appended here. -->
+
+            </div>
+        </div>
+        </section>
+
+        <section class="chooseWeather">
+        <div class="wrapper">
+            <h3>You wanna look like a sweeter man ahlie?</h3>
+            <form action="#" method="#" class="weatherForm" name="weatherForm">
+                <label for="torontoWeather">What's the weather like outside?</label>
+                <input type="text" id="torontoWeather" placeholder="10" maxlength="3" required>
+                <label>°C </label>
+                <input type="submit" value="Go" id="submitWeather">
+                <!-- event here! -->
+            </form>
+        </div>
+        <!-- THIS FORM IS FINE DON'T TOUCH IT -->
+
+        <div class="wrapper">
+            <div class="textContainer">
+                <ul class="iconBox">
+                    <li class="hot" id="hot">
+                        <i class="fas fa-sun"></i>
+                    </li>
+                    <li class="warm" id="warm">
+                        <i class="fas fa-cloud-sun"></i>
+                    </li>
+                    <li class="cold" id="cold">
+                        <i class="far fa-snowflake"></i>
+                    </li>
+                </ul>
+                <p class="resultNah" id="nahFam">Are you dumb? Stay home fam!</p>
+                <p class="result"></p>
+                
+            </div>
+        </div>
+        </section>
+
+        <section class="chooseShirt">
+            <div class="wrapper">
+                <h4 id="whatToDo">Got you:</h4>
+                
+            <div class="shirtContainer">
+            <ul class="shirtBox">
+                <li class="shirt" id="jersey">
+                    <img src="./assets/raptors-jersey.jpg" alt="red Toronto Raptors jersey">
+                    <!-- <p class="swag" id="jerseySwag">Flex in your jersey.</p> -->
+                </li>
+                <li class="shirt" id="tshirt">
+                    <img src="./assets/raps-tshirt.jpeg" alt="black Toronto Raptors tshirt">
+                    <!-- <p class="swag" id="tshirtSwag">Stunt in the t-shirt still.</p> -->
+                </li>
+                <li class="shirt" id="hoodie">
+                    <img src="./assets/raps-sweater.webp" alt="black Toronto Raptors hoodie">
+                    <!-- <p class="swag" id="hoodieSwag">Don't try and flex. Go put on the hoodie.</p> -->
+                </li>
+            </ul>
+            <p class="swag"></p>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+<!-- Create a seperate section for asynchronous HTML to go once we make JS -->
+
+
+
+
+<!-- JS Starts Here  -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="script.js"></script>
+<script>
+    
+</script>
+</body>
+</html>
