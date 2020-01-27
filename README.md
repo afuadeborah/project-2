@@ -1,4 +1,4 @@
-# project-2
+# Accelerated JavaScript project-2: Raptors Game Night
 Final project for Juno College Accelerated JavaScript course (October 2019). Raptors Game Night experience.
 \\Hello welcome!
 
